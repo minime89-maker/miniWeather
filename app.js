@@ -5,6 +5,7 @@ const api = {
 };
 
 
+
 /* Extract on User input */
 const input = document.getElementById('input');
 input.addEventListener('keypress', (event) => {
@@ -30,7 +31,7 @@ function createImagesArray(data) {
     }
   }
   
-  // create the function for loadImg
+  /* Loading Image */
   function loadImg() {
     removeImages();
     const url = "https://api.unsplash.com/search/photos?query='"+input.value+"'&per_page=9&client_id=Pwuo0Pbq3m332WiSLM_D3GnWwLzv8uvmbGOY_T-fGmc";
@@ -59,17 +60,26 @@ function getWeather(city){
         .then(showWeather);
 }
 
+  //Video
+  function toggleVideo(){
+    let video = document.getElementById('clouds')
+    if (video.style.display = 'none'){
+        video.style.display = 'block'
+    }
+}
+
+
 function showWeather(details){
 /* Main Weather Section */
     let city = document.getElementById('city');
     city.innerHTML = `${details.name}, ${details.sys.country}`;
-    document.getElementById('img').src = `http://openweathermap.org/img/wn/${details.weather[0].icon}@4x.png`;
+    /* document.getElementById('img').src = `http://openweathermap.org/img/wn/${details.weather[0].icon}@4x.png`; */
     let temperature = document.getElementById('temp');
     temperature.innerHTML = `${Math.round(details.main.temp)}°C`;
     let minMax = document.getElementById('min-max');
     minMax.innerHTML = `&downarrow; ${Math.round(details.main.temp_min)}°  &uparrow; ${Math.round(details.main.temp_max)}°`;
     let weatherType = document.getElementById('weather-type');
-    weatherType.innerHTML = `${details.weather[0].description}`;;
+    weatherType.innerHTML = `${details.weather[0].description}`;
     let feelsLike = document.querySelector('.feel-value');
     feelsLike.textContent= `${Math.round(details.main.feels_like)}°`;
 
@@ -97,7 +107,8 @@ function showWeather(details){
     let sunset = document.querySelector('.sunset-value');
     sunset.textContent = `${sunsetTime}`;
 
-/* background change on Weather condition */
+
+/* Background change on weather condition */
     let color = document.querySelector('.container');
     if(details.weather[0].description === 'overcast clouds' || details.weather[0].description === 'broken clouds'){
         document.body.style.backgroundColor = '#d8dee3';
@@ -106,7 +117,7 @@ function showWeather(details){
     } else if (details.weather[0].description === 'few clouds') {
         document.body.style.backgroundColor = '#f0edde';
     } else if (details.weather[0].description === 'clear sky'){
-        document.body.style.backgroundColor = '#fbedb3';
+        document.body.style.display = toggleVideo()
     } else if (details.weather[0].main === 'Atmosphere'){
         document.body.style.backgroundColor = '#dadbdf';   
     } else if (details.weather[0].main === 'Snow'){

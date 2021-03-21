@@ -4,11 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>miniWeather</title>
 </head>
 <body>
+
+
+<!-- Video Background -->
+<video id="clouds" src="/image/Cloudy_Sky_HD_BG.mp4" loop autoplay muted></video>
+<!-- <video id="scattered-clouds" src="/image/Cloudy_Sky_HD_BG.mp4" loop autoplay muted></video>
+<video id="few-clouds" src="/image/Cloudy_Sky_HD_BG.mp4" loop autoplay muted></video>
+<video id="clear-sky" src="/image/Cloudy_Sky_HD_BG.mp4" loop autoplay muted></video>
+<video id="atmosphere" src="/image/Cloudy_Sky_HD_BG.mp4" loop autoplay muted></video>
+<video id="snow" src="/image/Cloudy_Sky_HD_BG.mp4" loop autoplay muted></video>
+<video id="rain" src="/image/Cloudy_Sky_HD_BG.mp4" loop autoplay muted></video>
+<video id="frozzing-rain" src="/image/Cloudy_Sky_HD_BG.mp4" loop autoplay muted></video>
+<video id="drizzle" src="/image/Cloudy_Sky_HD_BG.mp4" loop autoplay muted></video>
+<video id="thunderstorm" src="/image/Cloudy_Sky_HD_BG.mp4" loop autoplay muted></video> -->
+
 
 <!-- Navigation Bar Section-->
 <div class="nav-bar">
@@ -23,14 +39,15 @@
     </div>
 </div>
 
+    
+
 <!-- Main Weather Section -->
-<div class="wrapper">
     <div class="container">
         <div class="main-weather">
             <p class="city" id="city">City</p>
             <p class="date" id="date">Date</p>
-            <img id="img" src="" alt="weather icon">
-            <p class="temp" id="temp">Temp</p>
+<!--             <img id="img" src="" alt="weather icon">
+ -->            <p class="temp" id="temp">Temp</p>
             <p class="description" id="weather-type">description</p>
             <p class="feel">Feels Like: <span class="feel-value"></span></p>
             <p class="min-max" id="min-max">min and max temp</p>  
@@ -59,6 +76,9 @@
 <!-- Footer -->
 <footer><small>&copy; 2021 miniWeather</small></footer> 
 
+
+
+<link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 <script src="app.js"></script>

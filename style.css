@@ -5,7 +5,7 @@
   font-family: "Monserrat", sans-serif;
 }
 body {
-  background-color: #fffae0;
+  background-color: #fff;
 }
 footer {
   position: absolute;
@@ -13,10 +13,11 @@ footer {
   font-size: 10px;
   width: 100%;
   text-align: center;
-  color: #808080;
+  color: #fff;
 }
 .container {
   display: none;
+  position: relative;
 }
 
 /* Navigation Bar  Section*/
@@ -24,25 +25,26 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 30px 24px;
+  margin: 30px 20px;
   padding-top: 2px;
+  position: relative;
 }
 .logo {
   padding-top: 5px;
 }
 input::placeholder {
-  color: #9099a7;
+  color: #e5e5e5;
 }
 .input {
-  width: 230px;
-  height: 29px;
+  width: 250px;
+  height: 30px;
   border-radius: 18px;
-  border: 2px solid #5f646c;
+  border: 2px solid #fff;
   text-align: center;
   font-size: 16px;
   outline: none;
   background: transparent;
-  color: #5f646c;
+  color: #e5e5e5;
 }
 button {
   outline: none;
@@ -52,89 +54,100 @@ button {
 }
 /* Main Weather Section */
 .location {
-  padding-top: 4px;
+  padding-top: 5px;
 }
 .city {
-  font-size: 20px;
-  color: #5f646c;
-  font-weight: bold;
-  padding-bottom: 3px;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+  padding-bottom: 5px;
 }
 .date {
-  font-size: 14px;
-  font-weight: 400;
-  color: #808080;
-  margin-bottom: -10px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #ededed;
 }
 .main-weather {
   display: none;
-
   text-align: center;
   color: black;
 }
 .temp {
-  font-size: 48px;
-  color: #5f646c;
-  font-weight: bold;
-  margin-top: -10px;
+  font-size: 100px;
+  color: #fff;
+  font-weight: 800;
+  padding-top: 30px;
 }
 .description {
-  font-size: 16px;
-  color: #808080;
+  font-size: 20px;
+  color: #ededed;
   text-transform: capitalize;
-  margin-bottom: 24px;
+  padding-bottom: 20px;
 }
 .feel {
   margin-top: 16px;
   font-size: 16px;
   font-weight: 300;
-  color: #5f646c;
+  color: #e5e5e5;
 }
 .feel-value {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 900;
+  color: #fff;
 }
 .last {
   color: black;
 }
 .min-max {
-  font-size: 14px;
-  color: #808080;
+  font-size: 18px;
+  padding-top: 3px;
+  font-weight: 700;
+  color: #fff;
 }
 
 /* Weather Details Section*/
 .details {
+  color: #ededed;
+  font-size: 16px;
   text-align: center;
-  color: #808080;
-  font-size: 14px;
   margin-top: 36px;
+  position: relative;
 }
 
 .details span {
   text-align: center;
-  font-size: 16px;
-  font-weight: 500;
-  color: #5f646c;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
 }
 .sun-sun {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin-bottom: 8px;
 }
 .speed-direction {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin-bottom: 8px;
 }
 
 .pres-hum {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
+/* Video Background */
+#clouds {
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  display: none;
+}
 /* Media Query Tablet Size */
 @media (min-width: 426px) and (max-width: 964px) {
   .input {
@@ -143,11 +156,8 @@ button {
   .details {
     display: none;
   }
-  .wrapper {
-    margin: 20px 60px;
-  }
   .main-weather {
-    margin: auto;
+    margin:0 50px;
     float: left;
     padding-top: 25px;
   }
@@ -156,6 +166,7 @@ button {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    opacity: 0.7;
   }
   .img {
     width: 115px;
@@ -169,6 +180,7 @@ button {
   footer {
     position: absolute;
     width: 100%;
+    color: #fff;
     bottom: 10px;
     margin-top: 20px;
     text-align: center;
@@ -188,9 +200,7 @@ button {
   .details {
     display: none;
   }
-  .wrapper {
-    margin: 60px 60px 0px 60px;
-  }
+
   .main-weather {
     margin: auto;
     float: left;
@@ -215,6 +225,7 @@ button {
     position: absolute;
     width: 100%;
     bottom: 10px;
+    color: #fff;
     margin-top: 20px;
     text-align: center;
   }
