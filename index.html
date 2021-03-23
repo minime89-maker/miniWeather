@@ -14,16 +14,17 @@
 
 
 <!-- Video Background -->
-<video id="clouds" src="/image/Cloudy_Sky_HD_BG.mp4" loop autoplay muted></video>
-<!-- <video id="scattered-clouds" src="/image/Cloudy_Sky_HD_BG.mp4" loop autoplay muted></video>
-<video id="few-clouds" src="/image/Cloudy_Sky_HD_BG.mp4" loop autoplay muted></video>
-<video id="clear-sky" src="/image/Cloudy_Sky_HD_BG.mp4" loop autoplay muted></video>
-<video id="atmosphere" src="/image/Cloudy_Sky_HD_BG.mp4" loop autoplay muted></video>
-<video id="snow" src="/image/Cloudy_Sky_HD_BG.mp4" loop autoplay muted></video>
-<video id="rain" src="/image/Cloudy_Sky_HD_BG.mp4" loop autoplay muted></video>
-<video id="frozzing-rain" src="/image/Cloudy_Sky_HD_BG.mp4" loop autoplay muted></video>
-<video id="drizzle" src="/image/Cloudy_Sky_HD_BG.mp4" loop autoplay muted></video>
-<video id="thunderstorm" src="/image/Cloudy_Sky_HD_BG.mp4" loop autoplay muted></video> -->
+<video class="background" src="/video/background.mp4" autoplay loop muted></video>
+<video id="broken-clouds" class="broken-clouds open" src="/video/broken-clouds.mp4"loop autoplay muted></video>
+<video id="scattered-clouds" src="/video/scattered-clouds.mp4"loop  autoplay muted></video>
+<video id="few-clouds" src="/video/clear-sky-1.mp4" loop autoplay muted></video>
+<video id="clear-sky" src="/video/clear-sky-2.mp4"  loop autoplay muted></video>
+<video id="atmosphere" src="/video/atmosphere.mp4" loop autoplay muted></video>
+<video id="snow" src="/video/snow.mp4" loop autoplay muted></video>
+<video id="rain" src="/video/light-rain.mp4" loop autoplay muted></video>
+<video id="frozing-rain" src="/video/frozing-rain.mp4" loop autoplay muted></video>
+<video id="drizzle" src="/video/shower-rain.mp4" loop autoplay muted></video>
+<video id="thunderstorm" src="/video/thunderstorm.mp4" loop autoplay muted></video>
 
 
 <!-- Navigation Bar Section-->
@@ -42,39 +43,35 @@
     
 
 <!-- Main Weather Section -->
-    <div class="container">
-        <div class="main-weather">
-            <p class="city" id="city">City</p>
-            <p class="date" id="date">Date</p>
-<!--             <img id="img" src="" alt="weather icon">
- -->            <p class="temp" id="temp">Temp</p>
-            <p class="description" id="weather-type">description</p>
-            <p class="feel">Feels Like: <span class="feel-value"></span></p>
-            <p class="min-max" id="min-max">min and max temp</p>  
+<div class="container">
+    <div class="main-weather">
+        <p class="city" id="city">City</p>
+        <p class="date" id="date">Date</p>
+        <p class="temp" id="temp">Temp</p>
+        <p class="description" id="weather-type">description</p>            <p class="feel">Feels like: <span class="feel-value"></span></p>
+        <p class="min-max" id="min-max">min and max temp</p> 
+          <!-- Weather Details Section-->      
+        <div class="details">
+            <div class="sun-sun">
+                <p>sunrise </br><span class="sunrise-value"></span> am</p>
+                <p>sunset </br><span class="sunset-value"></span> pm</p>
+            </div>
+                <div class="pres-hum">
+                    <p>humidity </br><span class="hum-value"></span> %</p>
+                    <p>pressure </br><span class="pres-value"></span> mb</p>
+                </div>
         </div>
-       
- <!-- Weather Details Section-->      
-<div class="details">
-    <div class="sun-sun">
-        <p>sunrise </br><span class="sunrise-value"></span> am</p>
-        <p>sunset </br><span class="sunset-value"></span> pm</p>
-     </div>
-        <div class="speed-direction">
-            <p>wind speed </br><span class="wind-value"></span> m/s</p>
-            <p>wind direction </br><span class="wd-value"></span> °</p>
-        </div>
-        <div class="pres-hum">
-            <p>humidity </br><span class="hum-value"></span> %</p>
-            <p>pressure </br><span class="pres-value"></span> mb</p>
-        </div>
+    </div>
 
 <!-- Random Image on User Input -->        
-</div>
-    <div id="grid"></div>
+    <div id="photos"></div>
 </div>
 
 <!-- Footer -->
-<footer><small>&copy; 2021 miniWeather</small></footer> 
+<footer>
+    Free stock footage by <a target="_blank" href="http://videezy.com">Videezy</a>
+     &copy; <a href="https://github.com/minime89-maker">miniWeather</a>
+</footer> 
 
 
 
