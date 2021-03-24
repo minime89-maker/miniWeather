@@ -20,7 +20,7 @@ input.addEventListener('keypress', (event) => {
 });
 
 /* Weather Image */
-function createImagesArray(data) {
+/* function createImagesArray(data) {
     const imageNodes = [];
     for(let i = 0;i < data.results.length;i++){
       imageNodes[i] = document.createElement("div");
@@ -28,10 +28,10 @@ function createImagesArray(data) {
       imageNodes[i].style.backgroundImage = "url("+data.results[i].urls.raw+")";
       document.getElementById("photos").insertAdjacentElement("beforeend", imageNodes[i]);
     }
-  }
+  } */
   
   /* Loading Image */
-  function loadImg() {
+ /*  function loadImg() {
     removeImages();
     const url = "https://api.unsplash.com/search/photos?query='"+input.value+"'&per_page=9&client_id=Pwuo0Pbq3m332WiSLM_D3GnWwLzv8uvmbGOY_T-fGmc";
     fetch(url)
@@ -48,7 +48,7 @@ function createImagesArray(data) {
     while(i < list.childNodes.length){
       list.removeChild(list.childNodes[i]);
     }
-  }
+  } */
   
 /* Get Weather data from Api */
 function getWeather(city){

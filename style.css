@@ -259,12 +259,12 @@ button {
     align-items: center;
     justify-content: space-between;
   }
-  #photos {
+  /* #photos {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     opacity: 0.5;
-  }
+  } */
   .img {
     width: 115px;
     height: 115px;
@@ -309,12 +309,12 @@ button {
     align-items: center;
     justify-content: space-between;
   }
-  #photos {
+  /*  #photos {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     opacity: 0.5;
-  }
+  } */
   .img {
     width: 200px;
     height: 200px;
