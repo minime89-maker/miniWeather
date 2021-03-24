@@ -22,8 +22,6 @@ footer a {
   display: none;
   position: relative;
 }
-
-/* Navigation Bar */
 .nav-bar {
   display: flex;
   align-items: center;
@@ -58,7 +56,6 @@ button {
   border: none;
   cursor: pointer;
 }
-/* Main Weather */
 .container {
   letter-spacing: 1px;
 }
@@ -106,8 +103,6 @@ button {
   font-weight: 500;
   color: #fff;
 }
-
-/* Weather Details Section*/
 .details {
   color: #fff;
   font-size: 16px;
@@ -134,8 +129,6 @@ button {
   align-items: center;
   justify-content: space-around;
 }
-
-/* Video Background */
 .background {
   position: fixed;
   top: 0;
@@ -245,7 +238,6 @@ button {
   opacity: 1;
   display: none;
 }
-/* Media Query Tablet Size */
 @media (min-width: 426px) and (max-width: 964px) {
   .input {
     width: 80vw;
@@ -267,7 +259,6 @@ button {
     align-items: center;
     justify-content: space-between;
   }
-  /* Weather Images */
   #photos {
     display: flex;
     align-items: center;
@@ -297,8 +288,6 @@ button {
     border: none;
   }
 }
-
-/* Media Query Desktop Size */
 @media (min-width: 965px) {
   .input {
     width: 80vw;
@@ -320,7 +309,6 @@ button {
     align-items: center;
     justify-content: space-between;
   }
-  /* Weather Images */
   #photos {
     display: flex;
     align-items: center;
