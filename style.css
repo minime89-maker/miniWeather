@@ -129,113 +129,97 @@ button {
   align-items: center;
   justify-content: space-around;
 }
+/* Video */
+video{
+  object-fit: cover;
+  opacity: 1;
+}
 .background {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  opacity: 1;
+
 }
 #broken-clouds {
-  object-fit: cover;
   position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  opacity: 1;
   display: none;
 }
 #scattered-clouds {
-  object-fit: cover;
   position: fixed;
   top: 0;
   width: 100%;
   height: 100%;
   left: 0;
-  opacity: 1;
   display: none;
 }
 #few-clouds {
-  object-fit: cover;
   position: fixed;
   top: 0;
   width: 100%;
   height: 100%;
   left: 0;
-  opacity: 1;
   display: none;
 }
 #clear-sky {
-  object-fit: cover;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 1;
   display: none;
 }
 #atmosphere {
-  object-fit: cover;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 1;
   display: none;
 }
 #snow {
-  object-fit: cover;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 1;
   display: none;
 }
 #rain {
-  object-fit: cover;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 1;
   display: none;
 }
 #frozing-rain {
-  object-fit: cover;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 1;
   display: none;
 }
 #drizzle {
-  object-fit: cover;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 1;
   display: none;
 }
 #thunderstorm {
-  object-fit: cover;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 1;
   display: none;
 }
 @media (min-width: 426px) and (max-width: 964px) {
