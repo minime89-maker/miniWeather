@@ -1,6 +1,6 @@
 
 const api = {
-    key: config.API_KEY,
+    key: config,
     base: 'https://api.openweathermap.org/data/2.5/weather?',
 };
 
@@ -14,7 +14,7 @@ input.addEventListener('keypress', (event) => {
         document.querySelector('.container').style.display = 'block';
         document.querySelector('.main-weather').style.display = 'block'; 
         document.querySelector('.content').style.display= 'block';
-        loadImg();
+        /* loadImg(); */
         document.querySelector('.background').style.display = 'none';
     } 
 });
