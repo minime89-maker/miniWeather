@@ -15,7 +15,7 @@ input.addEventListener('keypress', (event) => {
         document.querySelector('.main-weather').style.display = 'block'; 
         document.querySelector('.content').style.display= 'block';
         loadImg();
-        document.getElementsByClassName('background').style.display = 'none';
+        document.querySelector('.background').style.display = 'none';
     } 
 });
 
