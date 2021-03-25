@@ -1,63 +1,87 @@
 <!doctype html>
 <html lang=en>
+
 <head>
-<meta charset=UTF-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<link rel=preconnect href=https://fonts.gstatic.com>
-<link rel=preconnect href=https://fonts.gstatic.com>
-<link rel=preconnect href=https://fonts.gstatic.com>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;800;900&display=swap" rel=stylesheet>
-<link rel=stylesheet href=style.css>
-<title>miniWeather</title>
+	<meta charset=UTF-8>
+	<meta name=viewport content="width=device-width,initial-scale=1">
+	<link rel=preconnect href=https://fonts.gstatic.com>
+	<link rel=preconnect href=https://fonts.gstatic.com>
+	<link rel=preconnect href=https://fonts.gstatic.com>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;800;900&display=swap" rel=stylesheet>
+	<link rel=stylesheet href=style.css>
+	<title>miniWeather</title>
 </head>
+
 <body>
-<video class=background src=/video/background.mp4 autoplay loop muted playsinline></video>
-<video id=broken-clouds class="broken-clouds open" src=/video/broken-clouds.mp4 loop autoplay muted></video>
-<video id=scattered-clouds src=/video/scattered-clouds.mp4 loop autoplay muted ></video>
-<video id=few-clouds src=/video/few-clouds.mp4 loop autoplay muted></video>
-<video id=clear-sky src=/video/clear-sky.mp4 loop autoplay muted></video>
-<video id=atmosphere src=/video/atmosphere.mp4 loop autoplay muted></video>
-<video id=snow src=/video/snow.mp4 loop autoplay muted></video>
-<video id=rain src=/video/light-rain.mp4 loop autoplay muted></video>
-<video id=frozing-rain src=/video/frozing-rain.mp4 loop autoplay muted></video>
-<video id=drizzle src=/video/shower-rain.mp4 loop autoplay muted></video>
-<video id=thunderstorm src=/video/thunderstorm.mp4 loop autoplay muted></video>
-<div class=nav-bar>
-<div class=logo>
-<a href=index.html><img src=/image/miniWeather.svg alt="Mini Weather Logo" width=40 height=30></a>
-</div>
-<div class=content>
-<input class=input id=input placeholder="Search City" autofocus>
-</div>
-<div class=location>
-<button id=locationBtn><img src=/image/Location.svg alt=Location width=29 height=25></button>
-</div>
-</div>
-<div class=container>
-<div class=main-weather>
-<p class=city id=city>City</p>
-<p class=date id=date>Date</p>
-<p class=temp id=temp>Temp</p>
-<p class=description id=weather-type>description</p> <p class=feel>Feels like: <span class=feel-value></span></p>
-<p class=min-max id=min-max>min and max temp</p>
-<div class=details>
-<div class=sun-sun>
-<p>sunrise <br><span class=sunrise-value></span> am</p>
-<p>sunset <br><span class=sunset-value></span> pm</p>
-</div>
-<div class=pres-hum>
-<p>humidity <br><span class=hum-value></span> %</p>
-<p>pressure <br><span class=pres-value></span> mb</p>
-</div>
-</div>
-</div>
-</div>
-<footer>
-<a target=_blank href=http://pexels.com>Pexels</a>
-&copy; <a href=https://github.com/minime89-maker>miniWeather</a>
-</footer>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js></script>
-<script src=config.js></script>
-<script src=app.js></script>
+
+
+	<video class=background src=/video/background.mp4 autoplay loop muted playsinline></video>
+	<video id=broken-clouds class="broken-clouds open" src=/video/broken-clouds.mp4 loop autoplay muted></video>
+	<video id=scattered-clouds src=/video/scattered-clouds.mp4 loop autoplay muted></video>
+	<video id=few-clouds src=/video/few-clouds.mp4 loop autoplay muted></video>
+	<video id=clear-sky src=/video/clear-sky.mp4 loop autoplay muted></video>
+	<video id=atmosphere src=/video/atmosphere.mp4 loop autoplay muted></video>
+	<video id=snow src=/video/snow.mp4 loop autoplay muted></video>
+	<video id=rain src=/video/light-rain.mp4 loop autoplay muted></video>
+	<video id=frozing-rain src=/video/frozing-rain.mp4 loop autoplay muted></video>
+	<video id=drizzle src=/video/shower-rain.mp4 loop autoplay muted></video>
+	<video id=thunderstorm src=/video/thunderstorm.mp4 loop autoplay muted></video>
+
+	<!-- Navigation -->
+	<div class=nav-bar>
+		<div class=logo>
+			<a href=index.html>
+				<img src=/image/miniWeather.svg alt="Mini Weather Logo" width=40 height=30>
+			</a>
+		</div>
+		<div class=content>
+			<input class=input id=input placeholder="Search City" autofocus>
+		</div>
+		<div class=location>
+			<button id=locationBtn>
+				<img src=/image/Location.svg alt=Location width=29 height=25>
+			</button>
+		</div>
+	</div>
+
+	<!-- Weather details -->
+	<div class=container>
+		<div class=main-weather>
+			<p class=city id=city>City</p>
+			<p class=date id=date>Date</p>
+			<p class=temp id=temp>Temp</p>
+			<p class=description id=weather-type>description</p>
+			<p class=feel>Feels like: <span class=feel-value></span>
+			</p>
+			<p class=min-max id=min-max>min and max temp</p>
+			<div class=details>
+				<div class=sun-sun>
+					<p>sunrise
+						<br><span class=sunrise-value></span> am</p>
+					<p>sunset
+						<br><span class=sunset-value></span> pm</p>
+				</div>
+				<div class=pres-hum>
+					<p>humidity
+						<br><span class=hum-value></span> %</p>
+					<p>pressure
+						<br><span class=pres-value></span> mb</p>
+				</div>
+			</div>
+		</div>
+		<div id="photos"></div>
+	</div>
+
+
+	<footer>
+        <a target=_blank href=http://pexels.com>Pexels</a>
+		&copy; <a href=https://github.com/minime89-maker>miniWeather</a>
+    </footer>
+    
+
+	<script src=https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js></script>
+	<script src=config.js></script>
+	<script src=app.js></script>
 </body>
+
 </html>
